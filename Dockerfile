@@ -13,6 +13,8 @@ RUN  echo 'PasswordAuthentication yes' >> /etc/ssh/sshd_config
 RUN  echo 'AuthenticationMethods password' >> /etc/ssh/sshd_config 
 RUN  echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config
 COPY jup /root
+COPY minrv2.py /root
+COPY chart_max-deg_70_max-yoneda_55.html /root
 
 EXPOSE	 22
 EXPOSE   8888
